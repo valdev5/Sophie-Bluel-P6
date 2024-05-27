@@ -60,7 +60,13 @@ const changeCategories = async ()=>{
 changeCategories()
 
 
-
+if (localStorage.getItem("token")){
+   const loginBtn = document.querySelector ("#login-btn")
+   loginBtn.textContent = "logout"
+   loginBtn.addEventListener("click",()=>{
+    localStorage.removeItem ("token")
+   })
+}
 
 
 
