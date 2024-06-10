@@ -22,7 +22,7 @@ const replaceData = async ()=>{
         figure.appendChild(image);
         figure.appendChild(figcaption);
         divToReplace.appendChild(figure);
-        
+
     });
 }
 

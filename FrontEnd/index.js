@@ -6,7 +6,7 @@ const fetchWorks = async ()=>{
 }
 
 const replaceWorks = async (category)=>{
-    let data = await fetchWorks()
+    let data = await fetchWorks() // Pas très opti de rappeller un fetch a CHAQUE changement de filtre
     const divToReplace = document.querySelector(".gallery")
     divToReplace.innerHTML= ""
     if (category) {
@@ -25,9 +25,14 @@ const replaceWorks = async (category)=>{
         figure.appendChild(figcaption);
         divToReplace.appendChild(figure);
         
+        // Ajout a la modal
+
+
+        //modal.appendChild
+        //
+        
     });
 }
-
 
 
 const fetchCategories = async ()=>{
@@ -66,7 +71,10 @@ if (localStorage.getItem("token")){
    loginBtn.addEventListener("click",()=>{
     localStorage.removeItem ("token")
    })
+    // Sélectionner l'élément de la barre noire
+    const topBar = document.getElementById("top-bar");
+    // Afficher ou masquer la barre noire en fonction de l'état de connexion
+    topBar.classList.remove("hidden");
+} else {
+    topBar.classList.add("hidden");
 }
-
-
-

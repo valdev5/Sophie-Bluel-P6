@@ -276,3 +276,26 @@ form {
 	font-weight: 700;
 	line-height: normal;
 }
+
+/*** Top-bar ***/
+
+#top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	height: 50px;
+}
+.hidden {
+	display: none;
+}
+#top-bar .icon {
+	margin-right: 10px;
+	color: white;
+}
+#top-bar > p {
+	margin: 0;
+	text-align: center;
+}
