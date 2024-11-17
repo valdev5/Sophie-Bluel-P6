@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+html, body, div, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -22,7 +22,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -30,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
 }
 ol, ul {
 	list-style: none;
@@ -52,6 +55,7 @@ body {
 	margin:auto;
 	font-family: 'Work Sans' ;
 	font-size: 14px;
+	background-color: #fffef8;
 }
 header {
 	display: flex;
@@ -140,7 +144,7 @@ li:hover {
 }
 #contact {
 	width: 50%;
-margin: auto;
+	margin: auto;
 }
 #contact > * {
 	text-align: center;
@@ -180,10 +184,17 @@ input[type="submit"]{
 	border-radius: 60px ;
 }
 
+footer{
+	background-color: white;
+    height: 52px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 footer nav ul {
 	display: flex;
 	justify-content: flex-end;
-	margin: 2em
+	margin: 2em;
 }
 .sort-btn {
 	align-items: center;
@@ -226,10 +237,13 @@ header img {
 
 input[type="text"],
 input[type="password"] {
+	all: unset;
 	padding: 10px;
 	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
 	box-sizing: border-box;
 	font-family: 'Syne';
+	border: none;
+	background-color: white !important;
 
 }
 
@@ -240,6 +254,7 @@ input[type="submit"] {
     width: 150px; 
     min-width: 120px; 
     max-width: 200px; 
+	border: none;
 	
 }
 
@@ -255,10 +270,17 @@ form {
 
 #login{
 	display: flex;
-	margin-right: 20px;
 	align-items: center;
+	gap: 10px;
 }
-
+.login-form{
+	margin-right: 10rem;
+	font-size: 0.8em;
+}
+ .password-form{
+	margin-right: 8rem;
+	font-size: 0.8em;
+ }
 
 .password-forgot {
 	justify-content: center;
@@ -299,8 +321,6 @@ form {
 	margin: 0;
 	text-align: center;
 }
-
-
 
 .error{
 	display: none;
