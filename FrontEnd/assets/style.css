@@ -75,6 +75,7 @@ h1 > span {
 	font-family: 'Work Sans';
 	font-size:10px;
 	letter-spacing: 0.1em;
+	margin-top: 5px;
 
 }
 
@@ -119,7 +120,7 @@ li:hover {
 }
 
 #introduction p {
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
 #portfolio h2 {
 	text-align: center;
@@ -146,7 +147,7 @@ margin: auto;
 
 }
 #contact h2{
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 }
 #contact form {
 	text-align: left;
@@ -234,8 +235,12 @@ input[type="password"] {
 
 input[type="submit"] {
 	padding: 10px;
-	border-radius: 60px;
-	cursor: pointer;
+    border-radius: 60px;
+    cursor: pointer;
+    width: 150px; 
+    min-width: 120px; 
+    max-width: 200px; 
+	
 }
 
 .login-container {
@@ -244,14 +249,14 @@ input[type="submit"] {
 
 form {
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	gap: 10px;
 }
 
-.login-form {
+#login{
 	display: flex;
 	margin-right: 20px;
+	align-items: center;
 }
 
 
@@ -509,7 +514,7 @@ hr {
 	text-align: center;
 	padding: 10px 33px;
 	cursor: pointer;
-	width: 400px;
+	width: 107px;
 }
 
 .modal-content-new-photo #form-image {
@@ -563,7 +568,6 @@ hr {
 #modal-edit-work-form input[type="submit"] {
 	border-radius: 60px;
 	margin: 30px auto 45px;
-	padding: 10px 90px;
 	border: none;
 	color: #ffffff;
 	font-style: normal;
@@ -576,7 +580,7 @@ hr {
     max-height: 200px;  
     object-fit: contain; 
     display: block;     
-    margin-top: 15px;
+    
 }
 #submit-new-work{
 	background-color: #1D6154;
