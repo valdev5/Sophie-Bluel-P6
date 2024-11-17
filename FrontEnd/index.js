@@ -190,13 +190,20 @@ const handleImageUpload = () => {
       const modalEditPhoto = document.querySelector('#modal-edit-new-photo');
       modalEditPhoto.appendChild(imagePreview);
 
+      // Masquer les éléments inutiles
       document.getElementById('photo-add-icon').style.display = "none";
       document.getElementById('new-image').style.display = "none";
       document.getElementById('photo-size').style.display = "none";
       modalEditPhoto.style.padding = "0";
+
+      // Rendre le bouton "Valider" vert
+      const submitButton = document.getElementById('submit-new-work'); // Assurez-vous que l'id correspond
+      submitButton.style.backgroundColor = '#1D6154';
+      submitButton.style.color = 'white';
     }
   });
 };
+
 
 const handleFormSubmission = () => {
   document.getElementById('modal-edit-work-form').addEventListener('submit', async (event) => {

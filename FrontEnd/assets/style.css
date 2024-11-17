@@ -175,7 +175,6 @@ input[type="submit"]{
 	color: white;
 	background-color: #1D6154;
 	margin : 2em auto ;
-	width: 180px;
 	text-align: center;
 	border-radius: 60px ;
 }
@@ -236,7 +235,6 @@ input[type="password"] {
 input[type="submit"] {
 	padding: 10px;
 	border-radius: 60px;
-	width: 179px;
 	cursor: pointer;
 }
 
@@ -322,7 +320,6 @@ form {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
 	gap: 30px;
 }
 
@@ -330,7 +327,13 @@ form {
 	padding-right: 10px;
 	font-size: 20px;
 }
-
+.only-admin{
+	text-decoration: none;
+	color: black;
+}
+.modify{
+	margin-top: 7px
+}
 /*** CSS Modal ***/
 
 .modal-overlay {
@@ -450,6 +453,8 @@ hr {
 	font-family: 'Syne';
 	font-size: 1em;
 	font-weight: 700;
+	background-color: #1d6154;
+	cursor: pointer;
 }
 
 .modal-delete-all {
@@ -485,6 +490,7 @@ hr {
 	border-radius: 3px;
 	margin: 35px 105px 0 105px;
 }
+	
 
 .modal-content-new-photo i {
 	font-size: 58px;
@@ -503,6 +509,7 @@ hr {
 	text-align: center;
 	padding: 10px 33px;
 	cursor: pointer;
+	width: 400px;
 }
 
 .modal-content-new-photo #form-image {
@@ -558,9 +565,20 @@ hr {
 	margin: 30px auto 45px;
 	padding: 10px 90px;
 	border: none;
-	color: #FFFFFF;
+	color: #ffffff;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1em;
 	background-color: #A7A7A7;
 }
+#form-image-preview{
+	max-width: 100%;    
+    max-height: 200px;  
+    object-fit: contain; 
+    display: block;     
+    margin-top: 15px;
+}
+#submit-new-work{
+	background-color: #1D6154;
+}
+
